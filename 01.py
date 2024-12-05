@@ -24,7 +24,7 @@ turtle.forward(283)
 #süda
 turtle.penup()  #pen ülesse
 turtle.goto(200,200) #määran asukoha
-turtle.pendown()
+turtle.pendown()  #pen alla
 turtle.left(120)
 turtle.forward(100)
 turtle.circle(50,180)
