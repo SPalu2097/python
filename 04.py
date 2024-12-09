@@ -23,6 +23,7 @@ Loo programm, mis kysib kasutajalt, mitu kingitust on vaja pakkida.
 Programm peaks seej2rel arvutama, mitu t2is kinkekasti saab teha ja mitu kingitust j22b yle. Kasuta t2isarvulist jagamist (//) kinkekarpide arvu leidmiseks ja j22gi (%) operaatorit ylej22vate kingituste arvu leidmiseks.
 Kasuta veakontrolli ja vastuse vormindamist.
 """
+
 try:
     karbi_suurus = 5
     kingitused = int(input("Lisa kingituste arv: "))
@@ -34,9 +35,8 @@ except:
     print("J2lle tekitad probleeme!")
 
 try:
-
-    maht = input(int("Kui suur on su faili maht(MB): "))
-    kiirus = input(int("Kui kiire on su andmeside edastus (MB/s): "))
+    maht = int(input("Kui suur on su faili maht(MB): "))
+    kiirus = int(input("Kui kiire on su andme edastus(MB/s):"))
 
     aeg = maht / kiirus
     print(f"Teie faili alla laadimiseks kulub {aeg} sekundit!")
