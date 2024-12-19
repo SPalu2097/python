@@ -1,3 +1,4 @@
+#ülesanne 5
 #kommenteerimine: Ül on """ """ vahel ja kood aktiivseks ning alt+3 ning tulevad trellid
 """
 Sa oled loomas programmi, mis aitab kontrollida, kas inimesed vastavad vanusepiirangu nõuetele üritusel osalemiseks.
