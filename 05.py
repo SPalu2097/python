@@ -1,4 +1,6 @@
 #ülesanne 5
+#19.12.2024
+# Simon Palu
 #kommenteerimine: Ül on """ """ vahel ja kood aktiivseks ning alt+3 ning tulevad trellid
 """
 Sa oled loomas programmi, mis aitab kontrollida, kas inimesed vastavad vanusepiirangu nõuetele üritusel osalemiseks.
