@@ -20,8 +20,3 @@ for rida in fail:
     vastuvõetud.append(int(rida))
 
 fail.close()
-# aasta = 1
-
-aasta = input("Lisa aasta 2011-2019: ")
-#print(aasta[3])
-print(vastuvõetud[int(aasta[3])-1])
