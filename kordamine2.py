@@ -1,3 +1,4 @@
+import random
 # 2.1 äratus, küsi arvu kasutajalt ja nii mitu korda talle kuvatakse teksti "Tõuse ja sära!"
 
 # try:
@@ -42,10 +43,18 @@
 # except:
 #     print("sisesta ainult täis arvud!")
 
-# TÄRINGUD
-# Erinevate täringumängude jaoks on vajalik erinev arv täringuid. Näiteks Yahtzee (Yatzy) jaoks on vaja 5 täringut, Crapsi jaoks aga 2 täringut. Koostada programm, mis
-# küsib kasutajalt vajalike täringute arvu;
-# viskab vastava arvu täringuid (genereerib vastava arvu suvalisi arve, mis jäävad 1 ja 6 vahele);
-# väljastab iga arvu eraldi reale.
-# Vihje: Kui kasutada tsüklit, mis teeb kasutaja sisestatud arvu samme, siis igal sammul tuleb genereerida üks juhuslik arv ja see väljastada.
+# 2.5 ÕUNAD
+# Lumivalgekesel oli 14 õuna ja ta tahtis neid pöialpoistega jagada. Ta sai aru, et kui kõik seitse pöialpoissi tahavad õunu ja ta annaks kõigile kaks õuna, jääks ta ise üldse ilma. Nüüd otsustas ta õunu jagada nii, et küsib, mitu pöialpoissi tahab õunu, ja seejärel loosib iga soovija korral, kas anda talle üks või kaks õuna. Koostada programm, mis
+# küsib kasutajalt, mitu pöialpoissi tahab õunu (võib eeldada, et sisestatakse täisarv lõigust [0; 7]);
+# leiab ja väljastab eraldi ridadele, mitu õuna saab iga pöialpoiss (programm genereerib iga kord juhuslikult arvu 1 või 2);
+# leiab ja väljastab eraldi reale, mitu õuna jääb Lumivalgekesele.
+
+# ounad = 14
+# pp = int(input("Mitu PP tahab õuna: "))
+
+# for i in range(pp):
+#     suv_oun = random.randint(1,2)
+#     print(suv_oun)
+#     ounad -= suv_oun
+# print(f"Lumivalgkekesele jäi: {ounad} õuna")
 
