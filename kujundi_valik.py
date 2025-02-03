@@ -75,7 +75,8 @@ try:
         elif jatka == "ei":
             break
         else:
-            print("Sisesta väikeste tähtedega jah või ei ")
+            print("Sisestasid vale väärtuse!")
+            break
         
 
 except:
