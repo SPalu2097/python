@@ -1,45 +1,33 @@
-# PANGAKONTO
-# Looge funktsioon, mis võimaldab lisada või eemaldada summasid pangakontolt.
-# Funktsioon peaks algama algse saldoga ja võimaldama teha operatsioone:
-#  deposiit (raha lisamine)
-#  väljavõte (raha eemaldamine)
-# Tagastage peale igat toimingut konto jääk.
-# Funtsiooni parameetrid:
-#  algne_saldo: algse saldo väärtus
-#  toiming: String, mis tähistab tehtavat toimingut ('deposiit' või 'valjavote')
-#  summa: summa, mida soovitakse lisada või eemaldada
-
 while True:
-    algne_saldo = 100
+    saldo = 100
 
 
-    def deposiit():
-        a = algne_saldo
-        b = summa
-        lopp_saldo= a+b
-        print(f"Teie kontojaak on nüüd: {lopp_saldo}")
-
-    def valjavott():
-        if algne_saldo >= summa:
-            lopp_saldo = algne_saldo-summa
-            print(f"Teie kontojääk on {lopp_saldo} €")
-        elif algne_saldo < summa:
-            print("Sinu arvel pole piisavalt vahendeid!!!")
-        else:
-            print("Oled sisestanud vale väärtuse")
-
-
-
-    print(f"Tere, Olen sinu pank ja sinu konto saldo on {algne_saldo}€ ")
+    print(f"Tere, Olen sinu pank ja sinu konto saldo on {saldo}€ ")
 
     try:
         valik = str(input("Tee oma valik: 'deposiit', 'valjavott' või 'exit'  "))
+        
+        def summaP():
+            summa = float(input("Kui palju raha: "))
+            return summa 
 
 
         if valik == "deposiit":
             print("Valisid raha sisestamise!")
+            summa = summaP()
+            saldoU = saldo + summa
+            print(f"Teie kontojääk on {saldoU}€")
         elif valik == "valjavott":
             print("Valisid raha valjavotmise")
+            summa = summaP()
+            if saldo >= summa:
+                saldoU=saldo - summa
+                print(f"Teie kontojaak on {saldoU}€")
+            elif saldo < summa:
+                print("Arvel pole piisavalt raha")
+            else:
+                print("Sisesta numbrid!")
+                breakpoint
         elif valik == "exit":
             print("Valisid lahkumise")
             print("Head päeva Teile!")
@@ -49,19 +37,7 @@ while True:
             breakpoint
     except:
         print("Sisesta õigesti oma valik!")
-
-    try:
-
-        summa = float(input("Kui palju raha: "))
-
-        if valik == "deposiit":
-            deposiit()
-        elif valik == "valjavott":
-            valjavott()
-        else:
-            print("Sisestage palun õige väärtus valikust!")
-    except:
-        print("Palun sisesta summa numbrites!")
+    
 
     tegevus = int(input("Kas sulgen programmi? jah on 1 ja ei on 0: "))
     if tegevus != 1:
