@@ -40,5 +40,5 @@ while True:
     
 
     tegevus = int(input("Kas sulgen programmi? jah on 1 ja ei on 0: "))
-    if tegevus != 1:
+    if tegevus != 0:
         break
