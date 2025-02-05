@@ -9,13 +9,11 @@ def deposiit():
     tulem = summa + saldo
     print(f"Teie kontojääk on {tulem}€")
 def valjavott():
-    summaU = summaP()
-    return summaU
-    print(f"Teie kontojääk on {summaU}€")
-    if summaU < saldo:
-        jaak = saldo-summaU
-        return jaak
-    elif summaU > saldo:
+    summa = summaP()
+    if summa < saldo:
+        jaak = saldo-summa
+        print(f"Teie kontojääk on {jaak}€")
+    elif summa > saldo:
         print("Sul pole piisavalt raha, mine teeni juurde!")
     else:
         print("Midagi tegid valesti, korigeeri oma sisestust!")
@@ -36,10 +34,10 @@ while True:
         elif valik == "exit":
             print("Valisid lahkumise")
             print("Head päeva Teile!")
-            breakpoint
+            break
         else:
             print("Kirjutasid midagi valesti")
-            breakpoint
+            break
     except:
         print("Sisesta õigesti oma valik!")
     
