@@ -1,33 +1,38 @@
-while True:
-    saldo = 100
+saldo = 100
 
+def summaP():
+    summa = float(input("Kui palju raha: "))
+    return summa
+     #print(summa)
+def deposiit():
+    summa = summaP()
+    tulem = summa + saldo
+    print(f"Teie kontojääk on {tulem}€")
+def valjavott():
+    summaU = summaP()
+    return summaU
+    print(f"Teie kontojääk on {summaU}€")
+    if summaU < saldo:
+        jaak = saldo-summaU
+        return jaak
+    elif summaU > saldo:
+        print("Sul pole piisavalt raha, mine teeni juurde!")
+    else:
+        print("Midagi tegid valesti, korigeeri oma sisestust!")
+
+while True:
 
     print(f"Tere, Olen sinu pank ja sinu konto saldo on {saldo}€ ")
 
     try:
         valik = str(input("Tee oma valik: 'deposiit', 'valjavott' või 'exit'  "))
         
-        def summaP():
-            summa = float(input("Kui palju raha: "))
-            return summa 
-
-
         if valik == "deposiit":
             print("Valisid raha sisestamise!")
-            summa = summaP()
-            saldoU = saldo + summa
-            print(f"Teie kontojääk on {saldoU}€")
+            deposiit()
         elif valik == "valjavott":
             print("Valisid raha valjavotmise")
-            summa = summaP()
-            if saldo >= summa:
-                saldoU=saldo - summa
-                print(f"Teie kontojaak on {saldoU}€")
-            elif saldo < summa:
-                print("Arvel pole piisavalt raha")
-            else:
-                print("Sisesta numbrid!")
-                breakpoint
+            valjavott()
         elif valik == "exit":
             print("Valisid lahkumise")
             print("Head päeva Teile!")
@@ -42,3 +47,4 @@ while True:
     tegevus = int(input("Kas sulgen programmi? jah on 1 ja ei on 0: "))
     if tegevus != 0:
         break
+
