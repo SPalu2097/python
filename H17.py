@@ -18,8 +18,12 @@ print(f"Positvsete tehingute summa: {pos_arv_summa:.2f}")
 #see on teine ülesanne
 meeste_keskmine_palk = 0
 naiste_keskmine_palk = 0
-
+mpalgad = 0
 with open("palgad.txt") as fail:
     sisu2 = fail.readlines()
     for i in sisu2:
-        print(i, end="")
+        #print(i, end="")
+        tykeldus = i.split(",")
+        if tykeldus[3] == "Mees":
+            mpalgad+=float(tykeldus[6])
+print(f"Meeste palgad: {mpalgad:.2f}")
