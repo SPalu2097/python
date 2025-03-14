@@ -14,25 +14,17 @@ if response.status_code == 200:
     raamatud = data.get("raamatud", [])
     #print(raamatud)
     no_saadavus= []
-    # for raamat in raamatud:
-    #     id = raamat['id']
-    #     title = raamat['pealkiri']
-    #     autor = raamat['autor']
-    #     zanr = raamat['žanr']
-    #     output = raamat['väljaandmise_aasta']
-    #     saadavus = raamat['saadavus']
-
-        # print(f"Pealkiri {title}")
-        # print(f"Autor {autor}")
-        # print(f"žanr {zanr}")
-        # print(f"Väljaandmise_aasta {output}")
-        # print(f"Saadavus {saadavus}")
-        # print("_" * 40)
+    mitu_raam_2010 = 0
+   
     for raamat in raamatud:
         if raamat['saadavus'] == False:
             no_saadavus.append(raamat)
     for i in no_saadavus:
         print(i['pealkiri'])
+    for n in raamatud:
+        if n['väljaandmise_aasta'] <=2010:
+            mitu_raam_2010 += 1
+            print(mitu_raam_2010)
 
 
             
