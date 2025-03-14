@@ -21,10 +21,7 @@ if response.status_code == 200:
             no_saadavus.append(raamat)
     for i in no_saadavus:
         print(i['pealkiri'])
-    for n in raamatud:
-        if n['väljaandmise_aasta'] <=2010:
-            mitu_raam_2010 += 1
-            print(mitu_raam_2010)
+    
 
 
             
