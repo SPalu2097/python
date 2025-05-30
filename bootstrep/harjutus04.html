@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harjutus04</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
+    <style>
+        .jumbo{
+            background-image: url("https://picsum.photos/id/237/200/300");
+            color: #fff;
+        }
+
+        .card-img-top{
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+    }
+        
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <i class="fa-solid fa-rocket"></i> TestVeeb.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Avaleht</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">E-pood</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kassa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn btn-success" type="submit"><i class="fa-solid fa-user"></i> Logi sisse</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+        <div class="p-5 mb-4 bg-body-tertiary text-center jumbo"> 
+            <div class="container-fluid py-5"> 
+                <h1 class="display-5">See on Jumbo</h1> 
+                <p class="fs-4">Kasutamaks info pildile kuvamiseks.</p>  
+            </div> 
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://picsum.photos/200/300?grayscale" class="card-img-top" alt="esimene pilt">
+                <div class="card-body">
+                    <h5 class="card-title">Pilt numero uno</h5>
+                    <span class="badge text-bg-primary">Primary</span>
+                    <span class="badge text-bg-success">Success</span>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magnam repudiandae consequuntur harum ad magni, sed consectetur ea cumque ipsum quas nisi! Dolore nemo veritatis exercitationem eos necessitatibus ratione consectetur?</p>
+                    <i class="fa-brands fa-threads fa-2x"></i>
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://picsum.photos/200/300/?blur=2" class="card-img-top" alt="teine pilt">
+                <div class="card-body">
+                    <h5 class="card-title">Pilt numero twa</h5>
+                    <span class="badge text-bg-danger">Danger</span>
+                    <span class="badge text-bg-warning">Warning</span>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, error id, tempore vitae nihil facere exercitationem quisquam maiores voluptates beatae numquam dicta eligendi iste reprehenderit molestiae optio consectetur nemo voluptatibus!</p>
+                    <i class="fa-brands fa-threads fa-2x"></i>
+                    <i class="fa-brands fa-bluesky fa-2x"></i>
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <iframe class="card-img-top" height="315" src="https://www.youtube.com/embed/watch?v=FnA6NlRRxNw" title="Youtube video " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">Video</h5>
+                  <span class="badge text-bg-info">Info</span>
+                   <span class="badge text-bg-secondary">Secondary</span>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus minus, id voluptatum rerum expedita, error adipisci, necessitatibus unde dolorum cupiditate tempora non soluta? Et ratione quae delectus sint quas maxime.</p>
+                  <i class="fa-brands fa-google-plus-g fa-2x"></i>
+                  <i class="fa-brands fa-facebook fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </body>
+</html>
