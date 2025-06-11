@@ -100,18 +100,451 @@
                 <h1>TRAVELLY</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
+<<<<<<< HEAD
+            <div class="container mt-5 text-center">
+                <div class="row justify-content-center align-items-center g-3 p-3 border border-success rounded ">
+
+                    <!-- Kast 1: from ja to blokk -->
+                    <div class="col-auto d-flex flex-column gap-2">
+                    <input type="text" class="form-control" placeholder="From">
+                    <input type="text" class="form-control" placeholder="To">
+                    </div>
+
+                    <!-- Kast 2  kliendid ja kuupäev -->
+                    <div class="col-auto d-flex flex-column gap-2">
+                    <input type="date" class="form-control">
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="passengerInput" value="1 Passenger" readonly>
+                        <button class="btn btn-outline-secondary border-start-0 bg-white text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Edit
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" onclick="setPassengers('1 Passenger')">1 Passenger</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setPassengers('2 Passengers')">2 Passengers</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setPassengers('3 Passengers')">3 Passengers</a></li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <!-- Kast 3: Search nupp -->
+                    <div class="col-auto">
+                    <button type="button" class="btn btn-success btn-lg px-4">Search</button>
+                    </div>
+                    <script>
+                        function setPassengers(value) {
+                            document.getElementById('passengerInput').value = value;
+                        }
+                    </script>
+                </div>
+            </div>
+
+         </div>
+
+    </div>
+    <div class="container py-4">
+        <div class="row g-3">
+            <!-- Kaart 1 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-white border-0 shadow-sm position-relative overflow-hidden">
+                    <img src="pilt1.jpg" class="card-img" alt="New York">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                        <div class="d-flex justify-content-between"><span>1</span><span>+28c</span></div>
+                        <div class="text-center mt-auto">
+                            <h5 class="card-title">New York</h5>
+                            <p class="card-text">United States</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-sun"></i><span>$4,250</span>
+                        </div>
+=======
             <div class="unocontainer text-center">
-                <div class="row row-cols-auto">
-                     <div class="col">
-                        <input type="text" placeholder="From">
+                <div class="row g-2 justify-content-center">
+                     <div class="col-md-2">
+                        <input type="text" placeholder="From" >
                         <input type="text" placeholder="To">
                     </div>
-                    <div class="col">
+                    <div class="col-md-2">
                         <input type="date" placeholder="dd.mm.yyyy">
                         <input type="number" placeholder="1">
                     </div>
+                    <div class="col-md-2">
+                        <button type="button" class="block">Search</button>
+>>>>>>> 60a11168d298b9028ef7dc0f722c20383d3ee7c4
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaart 2 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-white border-0 shadow-sm position-relative overflow-hidden">
+                    <img src="pilt6.jpg" class="card-img" alt="Barcelona">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                        <div class="d-flex justify-content-between"><span>2</span><span>+24c</span></div>
+                        <div class="text-center mt-auto">
+                            <h5 class="card-title">Barcelona</h5>
+                            <p class="card-text">Spain</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-cloud"></i><span>$2,240</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaart 3 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-white border-0 shadow-sm position-relative overflow-hidden">
+                    <img src="pilt1.jpg" class="card-img" alt="New York">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                        <div class="d-flex justify-content-between"><span>3</span><span>+28c</span></div>
+                        <div class="text-center mt-auto">
+                            <h5 class="card-title">New York</h5>
+                            <p class="card-text">United States</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-sun"></i><span>$4,250</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaart 4 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-white border-0 shadow-sm position-relative overflow-hidden">
+                    <img src="pilt6.jpg" class="card-img" alt="Barcelona">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                        <div class="d-flex justify-content-between"><span>4</span><span>+24c</span></div>
+                        <div class="text-center mt-auto">
+                            <h5 class="card-title">Barcelona</h5>
+                            <p class="card-text">Spain</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-cloud"></i><span>$2,240</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaart 5 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-white border-0 shadow-sm position-relative overflow-hidden">
+                    <img src="pilt1.jpg" class="card-img" alt="New York">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                        <div class="d-flex justify-content-between"><span>5</span><span>+28c</span></div>
+                        <div class="text-center mt-auto">
+                            <h5 class="card-title">New York</h5>
+                            <p class="card-text">United States</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-sun"></i><span>$4,250</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaart 6 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-white border-0 shadow-sm position-relative overflow-hidden">
+                    <img src="pilt6.jpg" class="card-img" alt="Barcelona">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                        <div class="d-flex justify-content-between"><span>6</span><span>+24c</span></div>
+                        <div class="text-center mt-auto">
+                            <h5 class="card-title">Barcelona</h5>
+                            <p class="card-text">Spain</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-cloud"></i><span>$2,240</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaart 7 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-white border-0 shadow-sm position-relative overflow-hidden">
+                    <img src="pilt1.jpg" class="card-img" alt="New York">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                        <div class="d-flex justify-content-between"><span>7</span><span>+28c</span></div>
+                        <div class="text-center mt-auto">
+                            <h5 class="card-title">New York</h5>
+                            <p class="card-text">United States</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-sun"></i><span>$4,250</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaart 8 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-white border-0 shadow-sm position-relative overflow-hidden">
+                    <img src="pilt6.jpg" class="card-img" alt="Barcelona">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                        <div class="d-flex justify-content-between"><span>8</span><span>+24c</span></div>
+                        <div class="text-center mt-auto">
+                            <h5 class="card-title">Barcelona</h5>
+                            <p class="card-text">Spain</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-cloud"></i><span>$2,240</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaart 9 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-white border-0 shadow-sm position-relative overflow-hidden">
+                    <img src="pilt1.jpg" class="card-img" alt="New York">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                        <div class="d-flex justify-content-between"><span>9</span><span>+28c</span></div>
+                        <div class="text-center mt-auto">
+                            <h5 class="card-title">New York</h5>
+                            <p class="card-text">United States</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-sun"></i><span>$4,250</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaart 10 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-white border-0 shadow-sm position-relative overflow-hidden">
+                    <img src="pilt6.jpg" class="card-img" alt="Barcelona">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                        <div class="d-flex justify-content-between"><span>10</span><span>+24c</span></div>
+                        <div class="text-center mt-auto">
+                            <h5 class="card-title">Barcelona</h5>
+                            <p class="card-text">Spain</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-cloud"></i><span>$2,240</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaart 11 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-white border-0 shadow-sm position-relative overflow-hidden">
+                    <img src="pilt1.jpg" class="card-img" alt="New York">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                        <div class="d-flex justify-content-between"><span>11</span><span>+28c</span></div>
+                        <div class="text-center mt-auto">
+                            <h5 class="card-title">New York</h5>
+                            <p class="card-text">United States</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-sun"></i><span>$4,250</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaart 12 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="card text-white border-0 shadow-sm position-relative overflow-hidden">
+                    <img src="pilt6.jpg" class="card-img" alt="Barcelona">
+                    <div class="card-img-overlay d-flex flex-column justify-content-between p-3">
+                        <div class="d-flex justify-content-between"><span>12</span><span>+24c</span></div>
+                        <div class="text-center mt-auto">
+                            <h5 class="card-title">Barcelona</h5>
+                            <p class="card-text">Spain</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-cloud"></i><span>$2,240</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- pealkiri ja selle all olevad kaks teksti -->
+    <div class="container">
+        <div class="text-center">
+            <h1>TRAVELLY FEATURES</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maiores sit voluptates provident quos illo placeat accusamus, rem totam fugiat, cupiditate minus architecto! Itaque velit delectus adipisci amet quisquam! Dolor?</p>
+            </div>
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis adipisci ducimus nulla! Magnam dolores reiciendis error incidunt, porro nulla voluptatum dolor nostrum vel, ipsam consequuntur dolore in optio illo vero?</p>
+            </div>
+        </div>
+    </div>
+        <!-- kõrvuti kaks pilti koos teksti ja pealkirjadega -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 text-center mb-4">
+                <img src="pilt5.jpg" class="img-fluid rounded mb-3" alt="ilus">
+                <h2>Awsome Things</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa rerum cupiditate perferendis. Laborum laboriosam libero ullam omnis architecto doloremque, neque cumque, eaque non earum tempore hic maxime eos numquam doloribus!</p>
+            </div>
+            <div class="col-md-6 text-center mb-4">
+                <img src="pilt5.jpg" class="img-fluid rounded mb-3" alt="tore">
+                <h2>More Awesomeness</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis quam sed velit accusantium tempore quia. Adipisci, tenetur obcaecati necessitatibus reprehenderit, saepe quaerat harum ea natus excepturi nobis vitae eligendi error.</p>
+            </div>
+        </div>
+    </div>
+    <!-- suur pilt koos alumise tekstiga -->
+    <div class="container">
+        <img src="pilt5.jpg" class="img-fluid" alt="...">
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vitae nulla iusto itaque enim ratione autem dignissimos beatae inventore tenetur, vel voluptas esse natus alias? Incidunt tenetur molestias sequi facilis!</h5>
+    </div>
+    <!-- pilt paremal ja tekst vasakul ning vastupidi -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="pilt5.jpg" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col-md-6 align-items-center">
+                <h2>Nice Heating</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cumque voluptate molestias! Odio corporis odit nostrum ab nobis voluptates ipsa quibusdam exercitationem voluptatum accusamus nulla veritatis, debitis libero provident eius?</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6  align-items-center">
+                <h2>Nice Heating</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cumque voluptate molestias! Odio corporis odit nostrum ab nobis voluptates ipsa quibusdam exercitationem voluptatum accusamus nulla veritatis, debitis libero provident eius?</p>
+            </div>
+            <div class="col">
+                <img src="pilt6.jpg" class="img-thumbnail" alt="...">
+            </div>
+        </div>
+    </div>
+    <!-- pilt vasakul ja tekst paremal ning ikoonid -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="pilt5.jpg" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col-md-6 align-items-center">
+                <h2>Nice Heating</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cumque voluptate molestias! Odio corporis odit nostrum ab nobis voluptates ipsa quibusdam exercitationem voluptatum accusamus nulla veritatis, debitis libero provident eius?</p>
+                <div class="row">
                     <div class="col">
-                        <button type="button" class="btn btn-success btn-lg">Search</button>
+                    <i class="fa-solid fa-wifi"></i>
+                    <p>free wifi</p>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>free phone call</p>
+                    <i class="fa-solid fa-computer"></i>
+                    <p>free computer</p>
+                    </div>
+                    <div class="col">
+                    <i class="fa-solid fa-lock"></i>
+                    <p>security</p>
+                    <i class="fa-solid fa-bolt"></i>
+                    <p>free electrycity</p>
+                    <i class="fa-solid fa-water"></i>
+                    <p>best water</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6  align-items-center">
+                <h2>Nice Heating</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cumque voluptate molestias! Odio corporis odit nostrum ab nobis voluptates ipsa quibusdam exercitationem voluptatum accusamus nulla veritatis, debitis libero provident eius?</p>
+            </div>
+            <div class="col">
+                <img src="pilt6.jpg" class="img-thumbnail" alt="...">
+            </div>
+        </div>
+    </div>
+    <!-- blogi postituste kerimise nupud ja tekstid koos piltidega card süsteemis -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>From our blog</h2>
+            </div>
+            <div class="col">
+                <div class="container mt-4">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-primary bg-white">
+                        <i class="fas fa-arrow-left me-2"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary bg-white">
+                        <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 300px;">
+                <img class="card-img-top" src="pilt1.jpg" alt="people">
+                <div class="card-body">
+                <p class="card-text">
+                    With supporting text below as a natural lead-in to additional content.
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 300px;">
+                <img class="card-img-top" src="pilt1.jpg" alt="people">
+                <div class="card-body">
+                <p class="card-text">
+                    With supporting text below as a natural lead-in to additional content.
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 300px;">
+                <img class="card-img-top" src="pilt1.jpg" alt="people">
+                <div class="card-body">
+                <p class="card-text">
+                    With supporting text below as a natural lead-in to additional content.
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jumbotron 2 koos call to action nupuga  -->
+    <div class="jumbotron2 d-flex align-items-center justify-content-center">
+        <div class="p-4 bg-white rounded shadow text-center">
+             <h1 class="text-primary">Call To Action Headline</h1>
+            <p>Call to action text. This is some text and button within a call-to-action text block.</p>
+             <button class="btn btn-primary">Call To Action Button</button>
+         </div>
+    </div>
+    <!-- kolm kõrvuti tekst boxi -->
+    <div class="container">
+        <div class="container mb-5 mt-5">
+            <div class="card-deck flex-md-row mb-3">
+                <div class="card">
+                    <div class="card-body text-center" style="width: 300px;">
+                        <H2>Lorem ipsum</H2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque asperiores, ad temporibus sint fugiat veritatis corrupti illo laudantium pariatur sapiente accusantium quibusdam architecto officia, nemo blanditiis nam tempora delectus iusto.</p>
+                    </div>
+                </div>
+                <div class="card card-pricing popular shadow text-center px-3 mb-4">
+                    <div class="bg-transparent card-header pt-4 border-0">
+                        <h1 class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">777</span></h1>
+                        <span class="h6 text-muted ml-2">personal plan</span>
+                    </div>
+                    <div class="card-body pt-0">
+                        <ul class="list-unstyled mb-4">
+                            <li>lorem ipsum efficitur sed</li>
+                            <li>Magna lorem seper</li>
+                            <li>Venenatis turpis sed</li>
+                            <li>Auctor moestie magna</li>
+                        </ul>
+                        <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
                 <div class="card card-pricing text-center px-3 mb-4">  
